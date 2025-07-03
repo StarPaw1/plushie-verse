@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(1200, 600);
   background(220);
   fill(150, 100, 255);
   ellipse(200, 200, 150, 150);
