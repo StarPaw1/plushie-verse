@@ -1,6 +1,6 @@
 let brodyImg;
 function preload() {
-  brodyImg = loadImage("images/brody card.png"); // file name with space
+  brodyImg = loadImage("images/brody-card.png"); // file name with space
 }
 
  
