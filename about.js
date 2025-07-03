@@ -7,7 +7,7 @@ function setup() {
   let brodyImg;
 
 function preload() {
-  brodyImg = loadImage("brody card.png"); // file name with space
+  brodyImg = loadImage("images/brody card.png"); // file name with space
 }
 ellipse(100,100,100,100);
   
