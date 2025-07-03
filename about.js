@@ -9,7 +9,7 @@ function setup() {
   background(220);
   fill(150, 100, 255);
   
-ellipse(100,100,100,100);
+
   
 image(brodyImg,100,100,288,400);
   
