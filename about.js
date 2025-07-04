@@ -5,7 +5,7 @@ function preload() {
 
  
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, 100000);
   background(220);
   fill(150, 100, 255);
   
@@ -15,6 +15,6 @@ image(brodyImg,100,100,288,400);
   
 
   
-  console.log("if you read this the great");
+  
   
 }
