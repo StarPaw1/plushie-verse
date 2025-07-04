@@ -6,7 +6,7 @@ function preload() {
   brodyImg = loadImage("brody-card.png"); // file name with space
   mewbug = loadImage("Mewbug-card.png");
   skitters = loadImage("Skitters-card.png");
-  tiny = loadImage(tiny-card.png);
+  tiny = loadImage("tiny-card.png");
 }
 let BrodyAbout="Brody loves to bust baddies get into action!";
 
