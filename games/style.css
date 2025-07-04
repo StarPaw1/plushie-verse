@@ -3,3 +3,6 @@
   top: 200px;   /* y-position */
   left: 150px;  /* x-position */
 }
+body {
+  min-height: 300vh; /* 200% of the viewport height */
+}
