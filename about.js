@@ -18,6 +18,8 @@ function setup() {
   
 image(brodyImg,100,100,288,400);
 image(mewbug,488,100,288,400);
+  textSize(30);
+  text("Brody loves to /n bust baddies/n get into /n action!",194,550);
   
 
   
