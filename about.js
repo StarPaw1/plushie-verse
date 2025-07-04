@@ -1,12 +1,13 @@
 let brodyImg;
+let mewbug;
 function preload() {
   brodyImg = loadImage("brody-card.png"); // file name with space
+  mewbug = loadImage("Mewbug-card.png");
 }
-let mewbug;
-function preload(){
-mewbug = loadImage("Mewbug-card.png");
 
-}
+
+
+
  
 function setup() {
   createCanvas(windowWidth, 3000);
