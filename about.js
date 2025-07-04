@@ -20,6 +20,7 @@ image(brodyImg,100,100,288,400);
 image(mewbug,488,100,288,400);
   textSize(30);
   text(BrodyAbout,78,550,300);
+  text("Mewbug is talented at making potions.She makes them with the rarest materials.",488,550,300);
   
 
   
