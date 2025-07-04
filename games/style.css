@@ -1,7 +1,7 @@
 .mewbug-game {
   position: absolute;
   top: 200px;   /* y-position */
-  left: 300px;  /* x-position */
+  left: 450px;  /* x-position */
 }
 body {
   min-height: 300vh; /* 200% of the viewport height */
