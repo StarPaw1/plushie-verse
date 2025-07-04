@@ -4,7 +4,7 @@ function preload() {
 }
 let mewbug;
 function preload(){
-mewbug = loadImage('Mewbug-card.png');
+mewbug = loadImage("Mewbug-card.png");
 
 }
  
@@ -16,7 +16,7 @@ function setup() {
 
   
 image(brodyImg,100,100,288,400);
-  image(mewbug,488,100,288,400);
+image(mewbug,488,100,288,400);
   
 
   
