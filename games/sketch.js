@@ -1,6 +1,6 @@
 let title;
 function preload(){
-title=loadImage("Title-screen.png");
+title=loadImage("title-screen.png");
 
 }
 function mousePressed() {
