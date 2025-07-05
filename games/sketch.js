@@ -39,7 +39,7 @@ image(title,0,0,windowWidth,windowHeight);
 
 }
 function drawMixScreen(){
-  ellipse(100,100,width/2,height/2);
+  ellipse(width/2,,height/2,100);
 
 
 }
