@@ -1,7 +1,7 @@
 // this preloads the title screen
 let title;
 function preload(){
-//title=loadImage("title-screen.png");
+title=loadImage("title-screen.png");
 
 }// retry deploy
 // this sets the screen to title
