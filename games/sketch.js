@@ -1,7 +1,7 @@
 // this preloads the title screen
 let title;
 function preload(){
-title=loadImage("title-screen.png");
+//title=loadImage("title-screen.png");
 
 }
 // this sets the screen to title
@@ -31,6 +31,9 @@ function draw() {
     drawMixScreen();
   } else if (currentScreen === "result") {
     drawResultScreen();
+     console.log("draw loop is running");
+  background("#fdf6ff");
+  // rest of your code...
   }
 }
 function drawTitleScreen(){
@@ -43,3 +46,4 @@ function drawMixScreen(){
 
 
 }
+console.log("currentScreen is", currentScreen);
