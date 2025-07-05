@@ -1,8 +1,13 @@
+// this preloads the title screen
 let title;
 function preload(){
 title=loadImage("title-screen.png");
 
 }
+// this sets the screen to title
+let currentScreen = "title";
+
+// this lets title screen switch with the mix screen when the mouse is pressed
 function mousePressed() {
   if (currentScreen === "title") {
     // Either switch screens...
@@ -29,7 +34,7 @@ function draw() {
   }
 }
 function drawTitleScreen(){
-image(title,0,0,windowwidth,windowHeight);
+image(title,0,0,windowWidth,windowHeight);
   
 
 }
