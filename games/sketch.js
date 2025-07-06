@@ -48,11 +48,11 @@ image(title,0,0,windowWidth,windowHeight);
 }
 function drawMixScreen(){
   ellipse(width/2,height/2,100);
- image(stardust,width/2-120,200,100,100);
+ image(stardust,width/2-120-50,200,100,100);
  // Debug box for your button
   noFill();
   stroke("red");
-  rect(width/2-120, 200, 100, 100); // match your button position & size
+  rect(width/2-120-50, 200, 100, 100); // match your button position & size
 
 
 }
