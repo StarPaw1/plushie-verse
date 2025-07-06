@@ -1,9 +1,13 @@
 // this preloads the title screen
 let title;
+let stardust;
 function preload(){
 title=loadImage("title-screen.png");
+stardust=loadImage("star-dust-button.png");
+  
+}//preload ends
 
-}// retry deploy
+// retry deploy
 // this sets the screen to title
 let currentScreen = "title";
 
@@ -18,6 +22,7 @@ function mousePressed() {
 }
 function setup() {
   createCanvas(windowWidth, windowHeight);
+
 }
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
@@ -43,7 +48,12 @@ image(title,0,0,windowWidth,windowHeight);
 }
 function drawMixScreen(){
   ellipse(width/2,height/2,100);
+ image(stardust,width/2-120,200,100,100);
+ // Debug box for your button
+  noFill();
+  stroke("red");
+  rect(width/2-120, 200, 100, 100); // match your button position & size
 
 
 }
-console.log("currentScreen is", currentScreen);
+
