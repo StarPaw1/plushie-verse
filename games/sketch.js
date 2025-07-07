@@ -1,32 +1,23 @@
-// this preloads the title screen
 let title;
 let stardust;
-function preload(){
-title=loadImage("title-screen.png");
-stardust=loadImage("star-dust-button.png");
-  
-}//preload ends
-
-// retry deploy
-// this sets the screen to title
 let currentScreen = "title";
 
-// this lets title screen switch with the mix screen when the mouse is pressed
-function mousePressed() {
-  if (currentScreen === "title") {
-    // Either switch screens...
-    currentScreen = "mix";
+// Button dimensions
+let rectX, rectY;
+let rectW = 100;
+let rectH = 100;
 
-  
-  }
+function preload() {
+  title = loadImage("title-screen.png");
+  stardust = loadImage("star-dust-button.png");
 }
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  rectX = width / 2 - 200;
+  rectY = 250;
+}
 
-}
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
 function draw() {
   background("#fdf6ff");
 
@@ -36,24 +27,47 @@ function draw() {
     drawMixScreen();
   } else if (currentScreen === "result") {
     drawResultScreen();
-     console.log("draw loop is running");
-  background("#fdf6ff");
-  // rest of your code...
+    console.log("draw loop is running");
   }
 }
-function drawTitleScreen(){
-image(title,0,0,windowWidth,windowHeight);
-  
 
+function drawTitleScreen() {
+  image(title, 0, 0, windowWidth, windowHeight);
 }
-function drawMixScreen(){
-  ellipse(width/2,height/2,100);
- image(stardust,width/2-150-50,250,100,100);
- // Debug box for your button
+
+function drawMixScreen() {
+  // Example potion element
+  ellipse(width / 2, height / 2, 100);
+
+  image(stardust, rectX, rectY, rectW, rectH);
+
+  // Debug outline
   noFill();
   stroke("red");
-  rect(width/2-150-50, 250, 100, 100); // match your button position & size
-
-
+  rect(rectX, rectY, rectW, rectH);
 }
+
+function mousePressed() {
+  if (currentScreen === "title") {
+    currentScreen = "mix";
+  } else if (
+    currentScreen === "mix" &&
+    mouseX > rectX &&
+    mouseX < rectX + rectW &&
+    mouseY > rectY &&
+    mouseY < rectY + rectH
+  ) {
+    console.log("Stardust button clicked!");
+    // Trigger potion logic here
+    ellipse(50, 50, 50, 50);
+  }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  rectX = width / 2 - 200;
+}
+
+
+
 
