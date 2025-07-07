@@ -16,6 +16,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   rectX = width / 2 - 200;
   rectY = 250;
+   rectMode(CORNER);
 }
 
 function draw() {
