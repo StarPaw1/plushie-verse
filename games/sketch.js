@@ -1,6 +1,7 @@
 let title;
 let stardust;
 let currentScreen = "title";
+let showSparkle = false;
 
 // Button dimensions
 let rectX, rectY;
@@ -35,20 +36,6 @@ function draw() {
 function drawTitleScreen() {
   image(title, 0, 0, windowWidth, windowHeight);
 }
-
-function drawMixScreen() {
-  // Example potion element
-  
-  // Debug outline
-  noFill();
-  stroke("red");
-  ellipse(width / 2, height / 2, 100);
- rect(rectX, rectY, rectW, rectH);
-  image(stardust, rectX, rectY, rectW, rectH);
-
- 
-}
-
 function mousePressed() {
   if (currentScreen === "title") {
     currentScreen = "mix";
@@ -61,9 +48,28 @@ function mousePressed() {
   ) {
     console.log("Stardust button clicked!");
     // Trigger potion logic here
-    ellipse(50, 50, 50, 50);
+    showSparkle = true;
   }
 }
+
+function drawMixScreen() {
+  // Example potion element
+  
+  // Debug outline
+  noFill();
+  stroke("red");
+  ellipse(width / 2, height / 2, 100);
+ rect(rectX, rectY, rectW, rectH);
+  image(stardust, rectX, rectY, rectW, rectH);
+if (showSparkle) {
+    fill("gold");
+    noStroke();
+    ellipse(50, 50, 50, 50);
+  }
+ 
+}
+
+
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
