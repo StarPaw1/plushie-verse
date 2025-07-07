@@ -1,5 +1,5 @@
 let title;
-let stardut;
+let stardust;
 let currentScreen = "title";
 
 // Button dimensions
@@ -9,7 +9,7 @@ let rectH = 100;
 
 function preload() {
   title = loadImage("title-screen.png");
-  stardut = loadImage("star-dust-button.png");
+  stardust = loadImage("star-dust-button.png");
 }
 
 function setup() {
