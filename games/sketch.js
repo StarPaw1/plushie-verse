@@ -38,13 +38,14 @@ function drawTitleScreen() {
 
 function drawMixScreen() {
   // Example potion element
+  
+  // Debug outline
+  noFill();
+  stroke("red");
   ellipse(width / 2, height / 2, 100);
  rect(rectX, rectY, rectW, rectH);
   image(stardust, rectX, rectY, rectW, rectH);
 
-  // Debug outline
-  noFill();
-  stroke("red");
  
 }
 
