@@ -32,7 +32,7 @@ function draw() {
   } else if (currentScreen === "mix") {
     drawMixScreen();
   } 
-  if (currentScreen === "result") {
+  if (currentScreen === "result") { 
     drawResultScreen();
     console.log("draw loop is running");
   }
@@ -42,30 +42,30 @@ function drawTitleScreen() {
   image(title, 0, 0, windowWidth, windowHeight);
 }
 function mousePressed() {
-  if (currentScreen === "title") {
+  if (currentScreen === "title") {(
     currentScreen = "mix";
-  } 
-  if {
+  )} 
+  if {(
     currentScreen === "mix" &&
     mouseX > rectX &&
     mouseX < rectX + rectW &&
     mouseY > rectY &&
     mouseY < rectY + rectH
-  }
+  )}
   {
     
     console.log("Stardust button clicked!");
     // Trigger potion logic here
     showSparkle = true;
   }
-  if { 
+  if { (
   currentScreen === "mix"&&
     mouseX > rectX+buttonPos &&
     mouseX < rectX+buttonPos+rectW &&
     mouseY > rectY &&
     mouseY < rectY + rectH    
 
-  }
+)  }
   {
     console.log("StarShine button was clicked");
 shine = true;
