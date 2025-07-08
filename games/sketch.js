@@ -3,7 +3,7 @@ let currentScreen = "title";
 let title;
 let stardust;
 let starshine;
-let buttonPos = 20;
+let buttonPos = 140;
 let showSparkle = false;
 let shine = false;
 // Button dimensions
@@ -31,7 +31,8 @@ function draw() {
     drawTitleScreen();
   } else if (currentScreen === "mix") {
     drawMixScreen();
-  } else if (currentScreen === "result") {
+  } 
+  if (currentScreen === "result") {
     drawResultScreen();
     console.log("draw loop is running");
   }
