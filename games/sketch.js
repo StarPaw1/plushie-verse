@@ -42,16 +42,16 @@ function drawTitleScreen() {
   image(title, 0, 0, windowWidth, windowHeight);
 }
 function mousePressed() {
-  if (currentScreen === "title") {(
+  if (currentScreen === "title") {
     currentScreen = "mix";
-  )} 
-  if {(
+  } 
+  if {
     currentScreen === "mix" &&
     mouseX > rectX &&
     mouseX < rectX + rectW &&
     mouseY > rectY &&
     mouseY < rectY + rectH
-  )}
+  }
   {
     
     console.log("Stardust button clicked!");
