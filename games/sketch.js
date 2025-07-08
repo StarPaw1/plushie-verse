@@ -1,3 +1,5 @@
+currentScreen = "title";
+
 let title;
 let stardust;
 let starshine;
@@ -74,6 +76,7 @@ shine = true;
 
 function drawMixScreen() {
   // Example potion element
+  currentScreen ="mix";
   
   // Debug outline
   noFill();
@@ -88,6 +91,7 @@ function drawMixScreen() {
     ellipse(50, 50, 50, 50);
   }else if(shine)   {
 fill("#4ED5E9");
+      ellipse(100,100,50,50);
 
 
     }
