@@ -1,4 +1,4 @@
-currentScreen = "title";
+let currentScreen = "title";
 
 let title;
 let stardust;
