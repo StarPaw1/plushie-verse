@@ -1,6 +1,13 @@
 p{
-font-family:"helixa",sans-serif;
+font-family:"cute",cursive;
   width:111px;
+  background-color:rgb(191,0,255);
+  
+  
+}
+h1{
+width:250px;
+  background-color:rgb(112,255,122);
 }
 
 p:hover{
