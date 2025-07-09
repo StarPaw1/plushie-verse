@@ -1,4 +1,39 @@
 let currentScreen = "title";
+let ingredients = [];
+
+function addIngredient(ingredient) {
+  if (ingredients.length < 2) {
+    ingredients.push(ingredient);
+    console.log("Added:", ingredient);
+  }
+
+  if (ingredients.length === 2) {
+    checkPotion();
+  }
+}
+
+function checkPotion() {
+  const combo = ingredients.sort().join("+");
+
+  // Check specific combos
+  switch (combo) {
+    case "stardust+starshine":
+      displayResult("Glowing Luck Powder 🌟");
+      break;
+    case "slime+star":
+      displayResult("WiggleSpeed Elixir 💨");
+      break;
+    default:
+      displayResult("Unknown Potion 🤔");
+  }
+
+  // Clear for next mix
+  ingredients = [];
+}
+
+function displayResult(text) {
+  document.getElementById("result").innerText = text;
+}
 
 let title;
 let stardust;
@@ -54,6 +89,7 @@ if (
 ) {
   console.log("Stardust button clicked!");
   showSparkle = true;
+  addIngredient("stardust");
 }
   if  (
   currentScreen === "mix"&&
@@ -66,7 +102,7 @@ if (
   
     console.log("StarShine button was clicked");
 shine = true;
-
+addIngredient("starshine");
 
   }
     
@@ -102,7 +138,11 @@ if (shine) {
 
     }
   
- 
+ drawResultScreen(){
+
+
+
+ }
 
 
 
