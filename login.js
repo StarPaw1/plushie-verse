@@ -38,3 +38,15 @@ function loadUserData() {
     }
   });
 }
+window.addEventListener("DOMContentLoaded", () => {
+  const savedUser = localStorage.getItem("plushieUser");
+  if (savedUser) {
+    currentUserId = savedUser;
+    document.getElementById("usernameInput").value = savedUser;
+    document.getElementById("loginStatus").textContent = `🌈 Welcome back, ${currentUserId}!`;
+    loadUserData(); // optional: auto-load saved tasks/XP
+  }
+});
+
+
+
