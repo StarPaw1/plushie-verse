@@ -45,28 +45,25 @@ function mousePressed() {
   if (currentScreen === "title") {
     currentScreen = "mix";
   } 
-  if {
-    currentScreen === "mix" &&
-    mouseX > rectX &&
-    mouseX < rectX + rectW &&
-    mouseY > rectY &&
-    mouseY < rectY + rectH
-  }
-  {
-    
-    console.log("Stardust button clicked!");
-    // Trigger potion logic here
-    showSparkle = true;
-  }
-  if { (
+if (
+  currentScreen === "mix" &&
+  mouseX > rectX &&
+  mouseX < rectX + rectW &&
+  mouseY > rectY &&
+  mouseY < rectY + rectH
+) {
+  console.log("Stardust button clicked!");
+  showSparkle = true;
+}
+  if  (
   currentScreen === "mix"&&
     mouseX > rectX+buttonPos &&
     mouseX < rectX+buttonPos+rectW &&
     mouseY > rectY &&
     mouseY < rectY + rectH    
 
-)  }
-  {
+)  {
+  
     console.log("StarShine button was clicked");
 shine = true;
 
@@ -81,7 +78,7 @@ shine = true;
 
 function drawMixScreen() {
   // Example potion element
-  currentScreen ="mix";
+  
   
   // Debug outline
   noFill();
@@ -90,19 +87,23 @@ function drawMixScreen() {
  rect(rectX, rectY, rectW, rectH);
   image(stardust, rectX, rectY, rectW, rectH);
   image(starshine, rectX+buttonPos,rectY,rectW,rectH);
-    if (showSparkle) {
-    fill("gold");
-    noStroke();
-    ellipse(50, 50, 50, 50);
-  }else if(shine)   {
-fill("#4ED5E9");
-      ellipse(100,100,50,50);
+ if (showSparkle) {
+  fill("gold");
+  noStroke();
+  ellipse(50, 50, 50, 50);
+}
+
+if (shine) {
+  fill("#4ED5E9");
+  noStroke();
+  ellipse(100, 100, 50, 50);
+}
 
 
     }
   
  
-}
+
 
 
 
@@ -110,7 +111,3 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   rectX = width / 2 - 200;
 }
-
-
-
-
