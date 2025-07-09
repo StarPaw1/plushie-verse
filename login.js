@@ -15,6 +15,8 @@ function startSession() {
 
   // Now you're ready to load that user's XP or tasks:
   loadUserData();
+  window.location.href = "tasks.html";
+
 }
 function setup(){
 createCanvas(windowWidth,windowHeight);
