@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Login to your account</title>
+  
+</head>
+<body>
+<h2>Enter your Plushieverse Username</h2>
+<input type="text" id="usernameInput" placeholder="e.g. LilyTheBrave">
+<br>
+<button onclick="startSession()">Login</button>
+<p id="loginStatus"></p>
 
+<!-- Firebase core and auth (if used) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+
+<!-- Your Firebase config and setup -->
+<script src="firebase.js"></script>
+
+<!-- Then your login logic -->
+  <script src="login.js" defer></script>
+
+</body>
+
+  
+</html>
