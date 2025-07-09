@@ -1,6 +1,7 @@
 let currentScreen = "title";
 let ingredients = [];
 let results;
+let potionResult = "";
 function addIngredient(ingredient) {
   if (ingredients.length < 2) {
     ingredients.push(ingredient);
@@ -35,7 +36,8 @@ function checkPotion() {
 }
 
 function displayResult(text) {
-  document.getElementById("result").innerText = text;
+ potionResult = text;
+
 }
 
 let title;
@@ -144,7 +146,15 @@ if (shine) {
   
 function drawResultScreen(){
 image(results,0,0,windowWidth,windowHeight);
+// Draw the result text on top of the image
+  textAlign(CENTER, CENTER);
+  textSize(32);
+  fill("#5e2b82");
+  text("Potion Result:", width / 2, height / 2 - 50);
 
+  textSize(40);
+  fill("#f58ff0");
+  text(potionResult, width / 2, height / 2 + 10);
 
  }
 
