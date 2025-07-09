@@ -1,6 +1,6 @@
 let currentScreen = "title";
 let ingredients = [];
-
+let results;
 function addIngredient(ingredient) {
   if (ingredients.length < 2) {
     ingredients.push(ingredient);
@@ -9,6 +9,7 @@ function addIngredient(ingredient) {
 
   if (ingredients.length === 2) {
     checkPotion();
+   
   }
 }
 
@@ -25,10 +26,12 @@ function checkPotion() {
       break;
     default:
       displayResult("Unknown Potion 🤔");
+       
   }
-
+ currentScreen = "result";
   // Clear for next mix
   ingredients = [];
+  
 }
 
 function displayResult(text) {
@@ -50,6 +53,7 @@ function preload() {
   title = loadImage("title-screen.png");
   stardust = loadImage("star-dust-button.png");
   starshine = loadImage("star-shine-button.png");
+  results = loadImage("result-screen.png");
 }
 
 function setup() {
@@ -138,8 +142,8 @@ if (shine) {
 
     }
   
- drawResultScreen(){
-
+function drawResultScreen(){
+image(results,0,0,windowWidth,windowHeight);
 
 
  }
