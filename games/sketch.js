@@ -3,6 +3,7 @@ let ingredients = [];
 let results;
 let potionResult = "";
 let starroot;
+let moonlitWater;
 function addIngredient(ingredient) {
   if (ingredients.length < 2) {
     ingredients.push(ingredient);
@@ -29,7 +30,16 @@ function checkPotion() {
    case "stardust+starroot":
   displayResult("Nova Powder 🤩");
   break;
-
+    case "moonlitWater+stardust":
+      displayResult("Moonlit Stars ⭐🌙");
+break;
+    case "moonlitWater+starroot":
+      displayResult("Moon beans 🫘 🌙");
+      break;
+    case "moonlitWater+starshine":
+      displayResult(" Energy Bomb ⚡");
+      
+break;
     default:
       displayResult("Unknown Potion 🤔");
        
@@ -62,6 +72,7 @@ function preload() {
   starshine = loadImage("star-shine-button.png");
   results = loadImage("result-screen.png");
   starroot = loadImage("star-root-button.png");
+  moonlitWater = loadImage("moonlit-water-button.png");
 }
 
 function setup() {
@@ -129,6 +140,19 @@ mouseY < rectY + rectH
 console.log("Star root was added in the beaker");
 addIngredient("starroot")
 }
+if (
+mouseX > rectX-buttonPos*2&&
+mouseX < rectX-buttonPos*2+rectW&&
+  mouseY > rectY
+  mouseY < rectY + rectH
+  
+
+ ){
+console.log("Moonlit water was added!");
+  addIngredient("moonlitWater");
+
+
+}
 }
 
 function drawMixScreen() {
@@ -142,7 +166,8 @@ function drawMixScreen() {
  rect(rectX, rectY, rectW, rectH);
   image(stardust, rectX, rectY, rectW, rectH);
   image(starshine, rectX+buttonPos,rectY,rectW,rectH);
-  image(starroot, rectX-buttonPos, rectY, rectW,rectH)
+  image(starroot, rectX-buttonPos, rectY, rectW,rectH);
+  image(moonlitWater,rectX+buttonPos*2,rectY,rectW,rectH);
  if (showSparkle) {
   fill("gold");
   noStroke();
