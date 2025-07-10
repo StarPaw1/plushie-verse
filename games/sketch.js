@@ -2,6 +2,7 @@ let currentScreen = "title";
 let ingredients = [];
 let results;
 let potionResult = "";
+let starroot;
 function addIngredient(ingredient) {
   if (ingredients.length < 2) {
     ingredients.push(ingredient);
@@ -22,8 +23,11 @@ function checkPotion() {
     case "stardust+starshine":
       displayResult("Glowing Luck Powder 🌟");
       break;
-    case "slime+star":
-      displayResult("WiggleSpeed Elixir 💨");
+    case "starroot+starshine":
+      displayResult("Bright Starry Flower 🌸⭐");
+      break;
+    case "starroot+stardust":
+      displayResult("Nova Powder 🤩")
       break;
     default:
       displayResult("Unknown Potion 🤔");
@@ -56,6 +60,7 @@ function preload() {
   stardust = loadImage("star-dust-button.png");
   starshine = loadImage("star-shine-button.png");
   results = loadImage("result-screen.png");
+  starroot = loadImage("star-root-button.png");
 }
 
 function setup() {
@@ -112,10 +117,17 @@ addIngredient("starshine");
 
   }
     
+if (
+  currentScreen === "mix"&&
+mouseX > rectX-buttonPos &&
+mouseX < rect+buttonPos+rectW &&
+mouseY > rectY &&
+mouseY < rectY + rectH  
 
-
-
-  
+  ){
+console.log("Star root was added in the beaker");
+addIngredient("starroot")
+}
 }
 
 function drawMixScreen() {
@@ -129,6 +141,7 @@ function drawMixScreen() {
  rect(rectX, rectY, rectW, rectH);
   image(stardust, rectX, rectY, rectW, rectH);
   image(starshine, rectX+buttonPos,rectY,rectW,rectH);
+  image(starroot, rectX-buttonPos, rect, rectW,rectH)
  if (showSparkle) {
   fill("gold");
   noStroke();
@@ -153,7 +166,7 @@ image(results,0,0,windowWidth,windowHeight);
   text("Potion Result:", width / 2, height / 2 - 50);
 
   textSize(40);
-  fill("#f58ff0");
+  fill("#FCFFB3");
   text(potionResult, width / 2, height / 2 + 10);
 
  }
@@ -165,3 +178,9 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   rectX = width / 2 - 200;
 }
+
+
+
+
+
+
