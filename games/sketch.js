@@ -120,7 +120,7 @@ addIngredient("starshine");
 if (
   currentScreen === "mix"&&
 mouseX > rectX-buttonPos &&
-mouseX < rect+buttonPos+rectW &&
+mouseX < rectX-buttonPos+rectW &&
 mouseY > rectY &&
 mouseY < rectY + rectH  
 
@@ -141,7 +141,7 @@ function drawMixScreen() {
  rect(rectX, rectY, rectW, rectH);
   image(stardust, rectX, rectY, rectW, rectH);
   image(starshine, rectX+buttonPos,rectY,rectW,rectH);
-  image(starroot, rectX-buttonPos, rect, rectW,rectH)
+  image(starroot, rectX-buttonPos, rectY, rectW,rectH)
  if (showSparkle) {
   fill("gold");
   noStroke();
