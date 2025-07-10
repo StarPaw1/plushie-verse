@@ -26,9 +26,10 @@ function checkPotion() {
     case "starroot+starshine":
       displayResult("Bright Starry Flower 🌸⭐");
       break;
-    case "starroot+stardust":
-      displayResult("Nova Powder 🤩")
-      break;
+   case "stardust+starroot":
+  displayResult("Nova Powder 🤩");
+  break;
+
     default:
       displayResult("Unknown Potion 🤔");
        
