@@ -42,8 +42,9 @@ break;
 break;
     default:
       displayResult("Unknown Potion 🤔");
-       
+     break;   
   }
+  
  currentScreen = "result";
   // Clear for next mix
   ingredients = [];
