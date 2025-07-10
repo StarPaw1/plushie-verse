@@ -141,9 +141,10 @@ console.log("Star root was added in the beaker");
 addIngredient("starroot")
 }
 if (
+  currentScreen();
 mouseX > rectX-buttonPos*2&&
 mouseX < rectX-buttonPos*2+rectW&&
-  mouseY > rectY
+  mouseY > rectY &&
   mouseY < rectY + rectH
   
 
