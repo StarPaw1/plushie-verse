@@ -143,8 +143,8 @@ addIngredient("starroot")
 }
 if (
   currentScreen==="mix" &&
-mouseX > rectX-buttonPos*2&&
-mouseX < rectX-buttonPos*2+rectW&&
+mouseX > rectX+buttonPos*2&&
+mouseX < rectX+buttonPos*2+rectW&&
   mouseY > rectY &&
   mouseY < rectY + rectH
   
