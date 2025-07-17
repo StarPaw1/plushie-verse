@@ -10,8 +10,8 @@ rectMode(CORNER);
 drawBlogHome();
  }
 function drawBlogHome(){
-image(blogImg1,100,250,336,192);
-image(blogImg2,536,250,336,192);
+image(blogImg1,50,200,336*2,192*2);
+image(blogImg2,536+50,200,336*2,192*2);
 
 
 }
