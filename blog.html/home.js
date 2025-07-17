@@ -11,7 +11,7 @@ drawBlogHome();
  }
 function drawBlogHome(){
 image(blogImg1,50,200,336*1.5,192*1.5);
-image(blogImg2,536+100,200,336*1.5,192*15);
+image(blogImg2,536+100,200,336*1.5,192*1.5);
 
 
 }
