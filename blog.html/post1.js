@@ -9,7 +9,7 @@ textSize(20); // Optional: Makes it more readable
 };
 function post1(){
   fill(166,196,241);
-text(blogPara1,windowWidth-800,200,600);
+text(blogPara1,windowWidth-1000,200,600);
 
 
 }
