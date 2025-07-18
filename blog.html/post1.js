@@ -22,5 +22,5 @@ image(me,windowWidth*0.1+windowWidth*0.45,240+125,336,384);
   fill(142, 242, 210);
 text(blogPara2,windowWidth* 0.15,390,windowWidth*0.375);
   fill(73, 227, 255);
-text(blogPara3,windowWidth*0.1,570,windowWidth*0.75);
+text(blogPara3,windowWidth*0.1,870,windowWidth*0.75);
 }
