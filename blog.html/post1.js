@@ -8,7 +8,7 @@ textSize(20); // Optional: Makes it more readable
 
 };
 function post1(){
-text(blogPara1,150,200,windowWidth/0.75);
+text(blogPara1,150,200,400);
 
 
 }
