@@ -16,7 +16,7 @@ textSize(35); // Optional: Makes it more readable
 };
 function post1(){
 image(backG,0,0,windowWidth,windowHeight*4.5);
-  fill(166,196,241);
+  fill(255, 146, 255);
 text(blogPara1,windowWidth* 0.1,150,windowWidth*0.75);
 image(me,windowWidth*0.1+windowWidth*0.45,240+125,336,384);
   fill(142, 242, 210);
