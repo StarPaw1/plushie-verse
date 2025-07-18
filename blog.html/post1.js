@@ -3,13 +3,13 @@ let blogPara1 ="Hello! My name is StarPaw. You're probably thinking 'who is this
 function setup(){
 createCanvas(windowWidth,windowHeight*2.5);
 textAlign(LEFT, TOP);
-textSize(20); // Optional: Makes it more readable
+textSize(40); // Optional: Makes it more readable
   post1();  
 
 };
 function post1(){
   fill(166,196,241);
-text(blogPara1,windowWidth-1000,200,600);
+text(blogPara1,windowWidth-1000,150,600);
 
 
 }
