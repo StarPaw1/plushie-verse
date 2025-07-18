@@ -2,7 +2,7 @@ let blogPara1 ="Hello! My name is StarPaw. You're probably thinking 'who is this
 let starpawFont;
 
 function preload() {
-  starpawFont = loadFont("PermanentMarker.ttf");
+  starpawFont = loadFont("permanentMarker.ttf");
 }
 function setup(){
 createCanvas(windowWidth,windowHeight*2.5);
