@@ -10,7 +10,7 @@ textSize(40); // Optional: Makes it more readable
 function post1(){
 
   fill(166,196,241);
-text(blogPara1,windowWidth-1000,150,600);
+text(blogPara1,windowWidth* 0.1,150,600);
 
 
 }
