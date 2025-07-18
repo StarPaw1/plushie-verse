@@ -15,6 +15,6 @@ function post1(){
 
   fill(166,196,241);
 text(blogPara1,windowWidth* 0.1,150,windowWidth*0.75);
-image(me,windowWidth*0.1+windowWidth*0.45,240+150,336,384);
+image(me,windowWidth*0.1+windowWidth*0.45,240+125,336,384);
 
 }
