@@ -1,3 +1,4 @@
+let by = "Regan A.";
 let blogPara1 ="Hello! My name is StarPaw. You're probably thinking 'who is this StarPaw',well I am the programmer of this website 😉. I am also the leader of PAWSPARK, I know you are thinking PAW what now, well I will tell you all about me and PAWSPARK!";
 let me;
 let blogPara2 = "PAWSPARK is team of super plushies that help out those in need in Aqualand. Aqualand a city with many lakes and  ponds. On Aqualand's streets you can find plushies walking around and doing daily things like watering their gardens or going to the store. In total there are 50 ponds in aqualand 10 are hidden and only I can find them. ";
@@ -23,4 +24,5 @@ image(me,windowWidth*0.1+windowWidth*0.45,240+125,336,384);
 text(blogPara2,windowWidth* 0.15,390,windowWidth*0.375);
   fill(73, 227, 255);
 text(blogPara3,windowWidth*0.1,990,windowWidth*0.75);
+  text(by,10,10);
 }
