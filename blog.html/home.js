@@ -20,8 +20,10 @@ function mousePressed() {
 }
 
 function drawBlogHome(){
+ textSize(35);
+ fill(236, 236, 254);
 image(blogImg1,50,200,336*1.5,192*1.5);
 image(blogImg2,536+100,200,336*1.5,192*1.5);
-text("Meet PAWSPARK",60,250);
+text("Meet PAWSPARK",30,270);
 
 }
