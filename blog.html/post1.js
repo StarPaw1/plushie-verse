@@ -1,4 +1,4 @@
-let by = "Regan A.";
+let by = "By  Regan A.";
 let blogPara1 ="Hello! My name is StarPaw. You're probably thinking 'who is this StarPaw',well I am the programmer of this website 😉. I am also the leader of PAWSPARK, I know you are thinking PAW what now, well I will tell you all about me and PAWSPARK!";
 let me;
 let blogPara2 = "PAWSPARK is team of super plushies that help out those in need in Aqualand. Aqualand a city with many lakes and  ponds. On Aqualand's streets you can find plushies walking around and doing daily things like watering their gardens or going to the store. In total there are 50 ponds in aqualand 10 are hidden and only I can find them. ";
