@@ -34,5 +34,5 @@ textSize(40);
   background(255,255,255);
 background(20,10,40,30); // semi-transparent background for trailing effect
    text(diarypara1,50,50,windowWidth*0.40);
-  text(diarypara2,60,200);
+  text(diarypara2,windowWidth*0.40+20,50,windowWidth*0.40);
 };
