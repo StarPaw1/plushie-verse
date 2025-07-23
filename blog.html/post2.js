@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  background(0, 20); // semi-transparent background for trailing effect
+  background(20,10,40,30); // semi-transparent background for trailing effect
 
   // Star core
   fill(255, 220, 250);
