@@ -29,6 +29,8 @@ function draw() {
 
 }
 function diary (){
+  fill(255); // White text
+textSize(18);
   background(255,255,255);
 background(20,10,40,30); // semi-transparent background for trailing effect
    text(diaryPara1,50,50,windowWidth*0.60);
