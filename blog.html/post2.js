@@ -7,6 +7,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   noStroke();
   background(0);
+
 }
 
 function draw() {
@@ -22,8 +23,13 @@ function draw() {
     let y = height / 2 + random(-40, 40);
     fill(random(200, 255), random(100, 150), 255, 180);
     ellipse(x, y, random(5, 10));
+      diary();
   }
 
- text(diaryPara1,50,50,windowWidth*0.60);
-}
 
+}
+function diary (){
+  background(255,255,255);
+background(20,10,40,30); // semi-transparent background for trailing effect
+   text(diaryPara1,50,50,windowWidth*0.60);
+};
