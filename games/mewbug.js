@@ -4,6 +4,7 @@ let results;
 let potionResult = "";
 let starroot;
 let moonlitWater;
+let mints;
 function addIngredient(ingredient) {
   if (ingredients.length < 2) {
     ingredients.push(ingredient);
@@ -74,6 +75,7 @@ function preload() {
   results = loadImage("result-screen.png");
   starroot = loadImage("star-root-button.png");
   moonlitWater = loadImage("moonlit-water-button.png");
+  mints = loadImage("mint");
 }
 
 function setup() {
