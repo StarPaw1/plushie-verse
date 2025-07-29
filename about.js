@@ -6,10 +6,12 @@ let scrumples;
 let dabney;
 let starfluff;
 let brodyHover;
+let mewbugHover;
 function preload() {
   brodyImg = loadImage("brody-card.png"); // file name with space
   brodyHover = loadImage("hover-brody.png");
   mewbug = loadImage("Mewbug-card.png");
+  mewbugHover = loadImage("hover-mewbug.png");
   skitters = loadImage("Skitters-card.png");
   tiny = loadImage("tiny-card.png");
   scrumples = loadImage("scrumples-card.png");
@@ -66,7 +68,18 @@ noTint();
     fill(255);
     textSize(14);
     text("🛡️ Brody’s Baddie Tracker\nCosmic rank: Elite\nFavorite snack: Moonberries", mouseX + 20, mouseY + 30);
-  }
+  } 
+  if (mouseX > 488 && mouseX < 776 && mouseY > 100 && mouseY < 500) {
+  fill(0, 180);
+  rect(488, 100, 288, 400);
+    tint(255, 200); // 200 = slight transparency
+  image(mewbugHover, 488, 100, 288, 400); // make sure to load this image in preload
+    noTint();
+  fill(255);
+  textSize(14);
+  text("🧪 Mewbug’s Potion Primer\nElement Affinity: Crystal Vapors\nTop Recipe: Glitterroot Elixir", mouseX + 20, mouseY + 30);
+}
+
 
 
 
