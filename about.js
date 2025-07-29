@@ -20,7 +20,7 @@ let BrodyAbout="Brody loves to bust baddies get into action!";
 
  
 function setup() {
-  createCanvas(windowWidth, 3000);
+  createCanvas(windowWidth*1.45, 3000);
   background(220);
   fill(150, 100, 255);
   
