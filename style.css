@@ -14,3 +14,17 @@ p:hover{
 background-color:rgb(0,242,255);
 
 }
+
+#games{
+
+position: absolute;
+  top: 50px;   /* y position */
+  left: 700px;  /* x position */
+}
+}
+
+
+
+
+
+
