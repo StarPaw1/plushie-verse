@@ -16,10 +16,13 @@ background-color:rgb(0,242,255);
 }
 
 #games{
-
+background-color:rgb(98, 243, 162);
+font-family:cursive;
 position: absolute;
-  top: 50px;   /* y position */
+  color:rgb(232, 118, 255);
+  top: 10px;   /* y position */
   left: 700px;  /* x position */
+  
 }
 
 
