@@ -7,12 +7,14 @@ let dabney;
 let starfluff;
 let brodyHover;
 let mewbugHover;
+let skittersHover;
 function preload() {
   brodyImg = loadImage("brody-card.png"); // file name with space
   brodyHover = loadImage("hover-brody.png");
   mewbug = loadImage("Mewbug-card.png");
   mewbugHover = loadImage("hover-mewbug.png");
   skitters = loadImage("Skitters-card.png");
+
   tiny = loadImage("tiny-card.png");
   scrumples = loadImage("scrumples-card.png");
   dabney = loadImage("dabney-card.png");
