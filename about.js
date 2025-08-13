@@ -84,12 +84,12 @@ noTint();
 if (mouseX > 876 && mouseX < 1164 && mouseY > 100 && mouseY < 500) {
   fill(0, 180);
   rect(876, 100, 288, 400);
-  tint(255, 200); // slight transparency
+ 
   image(skittersHover, 876, 100, 288, 400);
   noTint();
   fill(255);
   textSize(14);
-  text("🎲 Skitters’ Surprise Protocol\nSpecialty: Random Appearances\nFavorite hiding spot: Inside vending machines", mouseX + 20, mouseY + 30);
+  text("⚡Skitters’ Surprise Protocol\nSuperpower: Random Appearances\nFavorite hiding spot: Inside vending machines", mouseX + 20, mouseY + 30);
 }
 
 
