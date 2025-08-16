@@ -102,62 +102,54 @@ function draw() {
 function drawTitleScreen() {
   image(title, 0, 0, windowWidth, windowHeight);
 }
-function mousePressed() {
-  if (currentScreen === "title") {
-    currentScreen = "mix";
-  } 
-if (
-  currentScreen === "mix" &&
-  mouseX > rectX &&
-  mouseX < rectX + rectW &&
-  mouseY > rectY &&
-  mouseY < rectY + rectH
-) {
-  console.log("Stardust button clicked!");
-  showSparkle = true;
-  addIngredient("stardust");
-}
-  if  (
-  currentScreen === "mix"&&
-    mouseX > rectX+buttonPos &&
-    mouseX < rectX+buttonPos+rectW &&
-    mouseY > rectY &&
-    mouseY < rectY + rectH    
+function touchStarted() {
+  if (currentScreen === "mix") {
+    // Stardust button
+    if (
+      mouseX > rectX &&
+      mouseX < rectX + rectW &&
+      mouseY > rectY &&
+      mouseY < rectY + rectH
+    ) {
+      console.log("Stardust was added!");
+      addIngredient("stardust");
+    }
 
-)  {
-  
-    console.log("StarShine button was clicked");
-shine = true;
-addIngredient("starshine");
+    // Starshine button
+    if (
+      mouseX > rectX + buttonPos &&
+      mouseX < rectX + buttonPos + rectW &&
+      mouseY > rectY &&
+      mouseY < rectY + rectH
+    ) {
+      console.log("Starshine was added!");
+      addIngredient("starshine");
+    }
 
+    // Moonlit Water button
+    if (
+      mouseX > rectX + buttonPos * 2 &&
+      mouseX < rectX + buttonPos * 2 + rectW &&
+      mouseY > rectY &&
+      mouseY < rectY + rectH
+    ) {
+      console.log("Moonlit Water was added!");
+      addIngredient("moonlitWater");
+    }
+
+    // Mint Frost button
+    if (
+      mouseX > rectX + buttonPos * 3 &&
+      mouseX < rectX + buttonPos * 3 + rectW &&
+      mouseY > rectY &&
+      mouseY < rectY + rectH
+    ) {
+      console.log("Mint Frost was added!");
+      addIngredient("mints");
+    }
   }
-    
-if (
-  currentScreen === "mix"&&
-mouseX > rectX-buttonPos &&
-mouseX < rectX-buttonPos+rectW &&
-mouseY > rectY &&
-mouseY < rectY + rectH  
-
-  ){
-console.log("Star root was added in the beaker");
-addIngredient("starroot")
 }
-if (
-  currentScreen==="mix" &&
-mouseX > rectX+buttonPos*2&&
-mouseX < rectX+buttonPos*2+rectW&&
-  mouseY > rectY &&
-  mouseY < rectY + rectH
-  
 
- ){
-console.log("Moonlit water was added!");
-  addIngredient("moonlitWater");
-
-
-}
-}
 
 function drawMixScreen() {
   // Example potion element
