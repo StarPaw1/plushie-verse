@@ -116,11 +116,12 @@ function touchStarted() {
       mouseY < rectY + rectH
     ) {
       console.log("Stardust was added!");
-      addIngredient("stardust");
       setTimeout(() => {
     currentScreen = "result";
     ingredients = [];
   }, 1000);
+      addIngredient("stardust");
+     
     }
 
     // Starshine button
@@ -131,11 +132,12 @@ function touchStarted() {
       mouseY < rectY + rectH
     ) {
       console.log("Starshine was added!");
-      addIngredient("starshine");
-      setTimeout(() => {
+       setTimeout(() => {
     currentScreen = "result";
     ingredients = [];
   }, 1000);
+      addIngredient("starshine");
+     
     }
 
     // Moonlit Water button
@@ -146,11 +148,12 @@ function touchStarted() {
       mouseY < rectY + rectH
     ) {
       console.log("Moonlit Water was added!");
-      addIngredient("moonlitWater");
-      setTimeout(() => {
+       setTimeout(() => {
     currentScreen = "result";
     ingredients = [];
   }, 1000);
+      addIngredient("moonlitWater");
+      
     }
 
     // Mint Frost button
@@ -161,11 +164,12 @@ function touchStarted() {
       mouseY < rectY + rectH
     ) {
       console.log("Mint Frost was added!");
-      addIngredient("mints");
-      setTimeout(() => {
+       setTimeout(() => {
     currentScreen = "result";
     ingredients = [];
   }, 1000);
+      addIngredient("mints");
+      
     }
   }
 }
