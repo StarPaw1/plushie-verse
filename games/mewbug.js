@@ -117,6 +117,10 @@ function touchStarted() {
     ) {
       console.log("Stardust was added!");
       addIngredient("stardust");
+      setTimeout(() => {
+    currentScreen = "result";
+    ingredients = [];
+  }, 1000);
     }
 
     // Starshine button
@@ -128,6 +132,10 @@ function touchStarted() {
     ) {
       console.log("Starshine was added!");
       addIngredient("starshine");
+      setTimeout(() => {
+    currentScreen = "result";
+    ingredients = [];
+  }, 1000);
     }
 
     // Moonlit Water button
@@ -139,6 +147,10 @@ function touchStarted() {
     ) {
       console.log("Moonlit Water was added!");
       addIngredient("moonlitWater");
+      setTimeout(() => {
+    currentScreen = "result";
+    ingredients = [];
+  }, 1000);
     }
 
     // Mint Frost button
@@ -150,6 +162,10 @@ function touchStarted() {
     ) {
       console.log("Mint Frost was added!");
       addIngredient("mints");
+      setTimeout(() => {
+    currentScreen = "result";
+    ingredients = [];
+  }, 1000);
     }
   }
 }
