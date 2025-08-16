@@ -103,6 +103,10 @@ function drawTitleScreen() {
   image(title, 0, 0, windowWidth, windowHeight);
 }
 function touchStarted() {
+  if (currentScreen === "title") {
+    currentScreen = "mix";
+    return;
+  }
   if (currentScreen === "mix") {
     // Stardust button
     if (
