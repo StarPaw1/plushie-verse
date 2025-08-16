@@ -75,7 +75,7 @@ function preload() {
   results = loadImage("result-screen.png");
   starroot = loadImage("star-root-button.png");
   moonlitWater = loadImage("moonlit-water-button.png");
-  mints = loadImage("mint");
+  mints = loadImage("mint-frost-button.png");
 }
 
 function setup() {
@@ -172,6 +172,7 @@ function drawMixScreen() {
   image(starshine, rectX+buttonPos,rectY,rectW,rectH);
   image(starroot, rectX-buttonPos, rectY, rectW,rectH);
   image(moonlitWater,rectX+buttonPos*2,rectY,rectW,rectH);
+  image(mints,rectX+buttonPos*3,rectY,rectW,rectH);
  if (showSparkle) {
   fill("gold");
   noStroke();
