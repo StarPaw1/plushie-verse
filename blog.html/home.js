@@ -15,7 +15,10 @@ function mousePressed() {
       mouseY > 200 && mouseY < 200 + 192*1.5) {
     window.location.href = "post1.html"; // Go to Post 1
   }
-
+ if (mouseX > 536+100 && mouseX < 636 + 336*1.5 &&
+      mouseY > 200 && mouseY < 200 + 192*1.5) {
+    window.location.href = "post2.html"; // Go to Post 1
+  }
 
 }
 
@@ -24,6 +27,6 @@ function drawBlogHome(){
  fill(236, 236, 254);
 image(blogImg1,50,200,336*1.5,192*1.5);
 image(blogImg2,536+100,200,336*1.5,192*1.5);
-text("Meet PAWSPARK",30,270);
+text("Meet PAWSPARK",20,270);
 
 }
