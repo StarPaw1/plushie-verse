@@ -28,8 +28,8 @@ function drawBlogHome(){
  fill(236, 236, 254);
 image(blogImg1,50,200,336*1.5,192*1.5);
 image(blogImg2,536+100,200,336*1.5,192*1.5);
- image(blogImg1,50,500,336*1.5,192*1.5);
+ image(blogImg1,50,650,336*1.5,192*1.5);
 text("Meet PAWSPARK",40,200);
 text("An insight from the co-head",650,200)
- text("Update of life",170,50);
+ text("Update of life",170,630);
 }
