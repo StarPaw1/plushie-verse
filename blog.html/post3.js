@@ -1,3 +1,3 @@
 onEvent("depressed", "click", function() {
-  playSound("'N-Sync---Bye-Bye-Bye-(Official-Audio).mp3");
+  setProperty("depressed","color",rgb(40,244,99))
 });
