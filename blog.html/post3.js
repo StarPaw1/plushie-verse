@@ -1,3 +1,4 @@
-onEvent("depressed", "click", function() {
-  setProperty("depressed","color",rgb(40,244,99))
+
+document.getElementById("depressed").addEventListener("click", function() {
+  document.getElementById("depressed").style.color = "rgb(40, 244, 99)";
 });
