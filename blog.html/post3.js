@@ -17,5 +17,8 @@ function setup(){
 function draw(){
   background(250);
    fill(23,89,230);
-  ellipse(windowWidth/2,windowHeight/2,windowWidth/16,windowHeight/16);
+  ellipse(windowWidth/2,windowHeight/2,windowWidth/16,windowWidth/16);
+}
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
