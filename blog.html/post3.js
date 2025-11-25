@@ -35,7 +35,7 @@ function draw() {
     image(star, 0, 0, windowWidth / 16, windowWidth / 16);
     pop();
 
-    angle += 0.01;
+    angle += 0.05;
   }
 }
 
