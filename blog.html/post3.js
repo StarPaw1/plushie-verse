@@ -36,7 +36,7 @@ function draw(){
     translate(windowWidth / 15 + windowWidth / 32, windowHeight / 4 + windowWidth / 32); 
      rotate(angle);
      imageMode(CENTER);
-    image(star,windowWidth/15,windowHeight/4,windowWidth/16,windowWidth/16);
+    image(star,200,89,windowWidth/16,windowWidth/16);
 
       pop();
      angle+=0.01;
