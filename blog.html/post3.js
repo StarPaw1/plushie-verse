@@ -27,6 +27,7 @@ push();
     rotate(angle);
   background(250);
    fill(23,89,230);
+   rotate(0)
   ellipse(windowWidth/2,windowHeight/2,windowWidth/16,windowWidth/16);
   if(starShow){
     image(star,windowWidth/15,windowHeight/4,windowWidth/16,windowWidth/16);
