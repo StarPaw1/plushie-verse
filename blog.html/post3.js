@@ -6,11 +6,12 @@ document.getElementById("depressed").addEventListener("click", function() {
   button1.style.color = "rgb(40, 244, 99)";
   bloggin = true;
   if (bloggin) {
-  element.style.backgroundColor = "rgb(40, 24, 235)";
+  button1.style.backgroundColor = "rgb(140, 182, 255)";
 }
 });
 function setup(){
   createCanvas(windowWidth,windowHeight);
-  elipse(windowWidth/2,windowHeight/2,windowWidth/16,windowHeight/16)
+  fill(23,89,230)
+  elipse(windowWidth/2,windowHeight/2,windowWidth/16,windowHeight/16);
   
 }
