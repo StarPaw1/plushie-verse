@@ -34,10 +34,10 @@ function draw(){
   if(starShow){
      push();
     translate(windowWidth / 15 + windowWidth / 32, windowHeight / 4 + windowWidth / 32); 
+     rotate(angle);
      imageMode(CENTER);
     image(star,windowWidth/15,windowHeight/4,windowWidth/16,windowWidth/16);
-     
-     rotate(angle);
+
       pop();
      angle+=0.01;
     
