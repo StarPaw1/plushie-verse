@@ -1,48 +1,45 @@
 let star;
 let angle = 0;
 let starShow = false;
-function preload(){
-star = loadImage('star.png');
 
+function preload() {
+  star = loadImage('star.png');
 }
-let bloggin = false;
-document.getElementById("depressed").addEventListener("click", function() {
 
-   const button1 = document.getElementById("depressed");
-  starShow = true;
-  button1.style.color = "rgb(40, 244, 99)";
-  bloggin = true;
-  if (bloggin) {
-  button1.style.backgroundColor = "rgb(140, 182, 255)";
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+
+  const button1 = document.getElementById("depressed");
+  button1.addEventListener("click", function() {
+    starShow = !starShow; // toggle on/off
+    button1.style.color = "rgb(40, 244, 99)";
+    button1.style.backgroundColor = starShow ? "rgb(140, 182, 255)" : "";
+  });
 }
-});
-function setup(){
-  createCanvas(windowWidth,windowHeight);
- 
-  
-}
-function draw(){
 
-
-    rotate(angle);
+function draw() {
   background(250);
-   fill(23,89,230);
-   push();
-   rotate(0);
-  ellipse(windowWidth/4,windowHeight/4,windowWidth/16,windowWidth/16);
-   pop();
-  if(starShow){
-     push();
-    translate(windowWidth / 15 + windowWidth / 32, windowHeight / 4 + windowWidth / 32); 
-     rotate(angle);
-     imageMode(CENTER);
-    image(star,200,89,windowWidth/16,windowWidth/16);
 
-      pop();
-     angle+=0.01;
-    
+  // Static ellipse
+  fill(23, 89, 230);
+  ellipse(windowWidth / 4, windowHeight / 4, windowWidth / 16, windowWidth / 16);
+
+  // Rotating star
+  if (starShow) {
+    push();
+    // Move origin to star position
+    translate(windowWidth / 15 + windowWidth / 32, windowHeight / 4 + windowWidth / 32); 
+    rotate(angle);
+    imageMode(CENTER);
+    // Draw star at (0,0) relative to translated origin
+    image(star, 0, 0, windowWidth / 16, windowWidth / 16);
+    pop();
+
+    angle += 0.01;
   }
 }
+
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+
