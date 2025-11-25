@@ -27,10 +27,13 @@ function draw(){
     rotate(angle);
   background(250);
    fill(23,89,230);
-   rotate(0)
+   push();
+   rotate(0);
   ellipse(windowWidth/4,windowHeight/4,windowWidth/16,windowWidth/16);
+   pop();
   if(starShow){
      push();
+     translate()
     image(star,windowWidth/15,windowHeight/4,windowWidth/16,windowWidth/16);
      
      rotate(angle);
