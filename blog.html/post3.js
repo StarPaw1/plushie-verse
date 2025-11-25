@@ -11,7 +11,11 @@ document.getElementById("depressed").addEventListener("click", function() {
 });
 function setup(){
   createCanvas(windowWidth,windowHeight);
-  fill(23,89,230)
-  elipse(windowWidth/2,windowHeight/2,windowWidth/16,windowHeight/16);
+ 
   
+}
+function draw(){
+  background(250);
+   fill(23,89,230);
+  ellipse(windowWidth/2,windowHeight/2,windowWidth/16,windowHeight/16);
 }
