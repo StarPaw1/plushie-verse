@@ -1,4 +1,5 @@
 let star;
+let angle = 0;
 let starShow = false;
 function preload(){
 star = loadImage('star.png');
@@ -21,11 +22,18 @@ function setup(){
   
 }
 function draw(){
+push();
+    translate(width / 2, height / 2);
+    rotate(angle);
   background(250);
    fill(23,89,230);
   ellipse(windowWidth/2,windowHeight/2,windowWidth/16,windowWidth/16);
   if(starShow){
-    image(star,windowWidth/15,windowHeight/4,windowWidth/16,windowWidth/16)
+    image(star,windowWidth/15,windowHeight/4,windowWidth/16,windowWidth/16);
+     
+     rotate(angle);
+     angle+=0.01;
+     pop();
   }
 }
 function windowResized() {
