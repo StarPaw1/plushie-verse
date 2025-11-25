@@ -33,12 +33,13 @@ function draw(){
    pop();
   if(starShow){
      push();
-     translate()
+    translate(windowWidth / 15 + windowWidth / 32, windowHeight / 4 + windowWidth / 32); 
     image(star,windowWidth/15,windowHeight/4,windowWidth/16,windowWidth/16);
      
      rotate(angle);
+      pop();
      angle+=0.01;
-     pop();
+    
   }
 }
 function windowResized() {
