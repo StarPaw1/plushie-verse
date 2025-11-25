@@ -1,8 +1,14 @@
+let star;
+let starShow = false;
+function preload(){
+star = loadImage('star.png');
+
+}
 let bloggin = false;
 document.getElementById("depressed").addEventListener("click", function() {
-  document.getElementById("depressed").style.color = "rgb(40, 244, 99)";
+
    const button1 = document.getElementById("depressed");
-  
+  starShow = true;
   button1.style.color = "rgb(40, 244, 99)";
   bloggin = true;
   if (bloggin) {
@@ -18,6 +24,9 @@ function draw(){
   background(250);
    fill(23,89,230);
   ellipse(windowWidth/2,windowHeight/2,windowWidth/16,windowWidth/16);
+  if(starShow){
+    image(star,windowWidth/15,windowHeight/4)
+  }
 }
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
