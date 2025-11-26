@@ -11,7 +11,7 @@ function setup() {
 
   const button1 = document.getElementById("depressed");
   button1.addEventListener("click", function() {
-    starShow = !starShow; // toggle on/off
+    starShow = true; // toggle on/off
     button1.style.color = "rgb(40, 244, 99)";
     button1.style.backgroundColor = starShow ? "rgb(140, 182, 255)" : "";
   });
@@ -32,7 +32,7 @@ function draw() {
     rotate(angle);
     imageMode(CENTER);
     // Draw star at (0,0) relative to translated origin
-    image(star, 0, 0, windowWidth / 16, windowWidth / 16);
+    image(star, 8, 8, windowWidth / 16, windowWidth / 16);
     pop();
 
     angle += 0.05;
