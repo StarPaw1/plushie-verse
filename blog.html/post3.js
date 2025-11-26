@@ -32,8 +32,17 @@ function draw() {
     rotate(angle);
     imageMode(CENTER);
     // Draw star at (0,0) relative to translated origin
-    image(star, 8, 8, windowWidth / 16, windowWidth / 16);
+    image(star, 0, 0, windowWidth / 16, windowWidth / 16);
     pop();
+        push();
+    // Move origin to star position
+    translate(windowWidth / 10 + windowWidth / 5, windowHeight / 5 + windowWidth / 32); 
+    rotate(angle);
+    imageMode(CENTER);
+    // Draw star at (0,0) relative to translated origin
+    image(star, 0, 0, windowWidth / 16, windowWidth / 16);
+    pop();
+
 
     angle += 0.05;
   }
