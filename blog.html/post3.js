@@ -20,26 +20,26 @@ function setup() {
 function draw() {
   background(250);
 
-  // Static ellipse
+ 
   fill(23, 89, 230);
   ellipse(windowWidth / 4, windowHeight / 4, windowWidth / 16, windowWidth / 16);
 
-  // Rotating star
+// stars8
   if (starShow) {
     push();
-    // Move origin to star position
+    // pos
     translate(windowWidth / 15 + windowWidth / 32, windowHeight / 4 + windowWidth / 32); 
     rotate(angle);
     imageMode(CENTER);
-    // Draw star at (0,0) relative to translated origin
+    // 0 is right
     image(star, 0, 0, windowWidth / 16, windowWidth / 16);
     pop();
         push();
-    // Move origin to star position
-    translate(windowWidth / 10 + windowWidth / 5, windowHeight / 5 + windowWidth / 32); 
+    // this is for pos
+    translate(windowWidth / 10 + windowWidth / 4, windowHeight / 5 + windowWidth / 32); 
     rotate(angle);
     imageMode(CENTER);
-    // Draw star at (0,0) relative to translated origin
+    // 0 keeps it at the same spot
     image(star, 0, 0, windowWidth / 16, windowWidth / 16);
     pop();
 
