@@ -1,6 +1,7 @@
 let star;
 let angle = 0;
 let starShow = false;
+let viewShow = false;
 
 function preload() {
   star = loadImage('star.png');
@@ -8,12 +9,16 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-
+  const clicker = document.getElementById("view");
+  //makes button hide
+  clicker.hidden =true
+  // makes star visable
   const button1 = document.getElementById("depressed");
   button1.addEventListener("click", function() {
-    starShow = true; // toggle on/off
+    starShow = true; 
     button1.style.color = "rgb(40, 244, 99)";
     button1.style.backgroundColor = starShow ? "rgb(140, 182, 255)" : "";
+    viewShow = true;
   });
 }
 
@@ -45,6 +50,12 @@ function draw() {
 
 
     angle += 0.05;
+    if (viewShow){
+      clicker.hidden=false;
+      
+    }
+
+    
   }
 }
 
