@@ -2,6 +2,7 @@ let star;
 let angle = 0;
 let starShow = false;
 let viewShow = false;
+  const clicker = document.getElementById("view");
 
 function preload() {
   star = loadImage('star.png');
@@ -9,7 +10,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  const clicker = document.getElementById("view");
+
   //makes button hide
   clicker.hidden =true
   // makes star visable
